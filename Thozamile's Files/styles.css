@@ -36,6 +36,10 @@ body {
   align-items: center;
 }
 
+.j-center {
+  justify-content: center;
+}
+
 nav {
   padding: 0 70px;
 }
@@ -85,9 +89,9 @@ button {
 
 #nav-button:hover {
   background-color: #06D001;
-  border-color: #06D001;
 }
 
+/* Middle Header Section */
 #middle-header-but {
   text-align: center;
   margin: 120px;
@@ -98,15 +102,46 @@ button {
   margin-bottom: 45px;
 }
 
-button:not(#nav-button) {
+main button, #search-but {
+  border-radius: 25px;
+}
+
+main button, #search-but, #search, #search-but-alt {
   border: 0.3px solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.05);
   font-size: 28px;
-  border-radius: 25px;
   padding: 9px 15px;
 }
 
+
+#search-but-alt {
+  border-radius: 0 25px 25px 0;
+  border: 0.3px solid rgb(255, 255, 255);
+  position: relative;
+  right: 5px;
+}
+
+#search {
+  border-radius: 25px 0 0 25px;
+  color: white;
+  width: 380px;
+}
+
+#search-but, #search-form {
+  transition: all 0.2s ease;
+}
+
+#search-form {
+   display: none;
+   transform: scaleX(0);
+}
+
+/* Categories Section */
+
 #categories {
-  justify-content: center;
   column-gap: 10px;
+}
+
+.cate-but:hover, .cate-but:active, #search-but-alt:hover, #search-but-alt:active, #search-but:hover, #search-but:active  {
+  background-color: rgba(255, 255, 255, 0.2);
 }
