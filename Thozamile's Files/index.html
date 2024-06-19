@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -57,11 +58,19 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <span>Search</span>
                 </button>
+		<div class="flex j-center">
+		<form id="search-form" class="flex" method="POST">
+			<input type="text" id="search" name="search">
+			<button id="search-but-alt">
+                    		<i class="fa-solid fa-magnifying-glass"></i>
+                	</button>
+		</form>
+		</div>
             </section>
         </header>
 
         <main>
-            <section id="categories" class="flex">
+            <section id="categories" class="flex j-center">
                 <button class="cate-but">All</button>
                 <button class="cate-but">Sale</button>
                 <button class="cate-but">Shoes</button>
