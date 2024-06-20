@@ -140,7 +140,75 @@ main button, #search-but, #search, #search-but-alt {
 
 #categories {
   column-gap: 10px;
+  margin-bottom: 50px;
 }
+
+#cards {
+  flex-wrap: wrap;
+  padding: 0 10px;
+  column-gap: 25px;
+  row-gap: 50px;
+  font-family: "Nunito", serif;
+}
+
+#cards img, .card {
+  width: 425px;
+}
+
+#cards img {
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #495347;
+  padding-bottom: 15px;
+}
+
+.card-text {
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.card-text, .card-buts {
+  padding: 0 20px;
+}
+
+.card-h {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-but button {
+  display: block;
+  width: 100%;
+  font-size: 23px;
+  border-radius: 8px;
+}
+
+.card-but button:hover, card {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.buy-now button {
+  color: black;
+  background-color: rgb(147, 210, 120);
+  border-color: rgb(147, 210, 120);
+  margin-bottom: 13px;
+}
+
+.cart {
+}
+
 
 .cate-but:hover, .cate-but:active, #search-but-alt:hover, #search-but-alt:active, #search-but:hover, #search-but:active  {
   background-color: rgba(255, 255, 255, 0.2);
